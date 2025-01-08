@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Nikhil's Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: (to bottom, blue, 0, 157, 255);
+            box-shadow: 0 0 15px 5px rgb(0, 0, 255);
+        }
+
+        nav ul {
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(34, 37, 212);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+
+        }
+
+        h2 {
+            text-align: left;
+            padding-left: 100px;
+            margin-top: 100px;
+            font-size: 3rem;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 40%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 70px 0;
+        }
+
+        .rightSection img {
+            width: 80%;
+            border-radius: 90%;
+
+        }
+
+        .color {
+            color: rgb(0, 157, 255);
+        }
+
+        #element {
+            color: rgb(0, 157, 255);
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 157, 255);
+            text-decoration: none;
+            border-radius: 5px;
+            position: relative;
+
+        }
+
+        .download-btn:hover {
+            color: white;
+            background-color: rgb(34, 37, 212);
+        }
+
+        .about h1 {
+            margin-top: 15%;
+            margin-left: 30px;
+            color: rgb(0, 157, 255);
+
+        }
+
+        .about p {
+            margin-left: 30px;
+            width: 80%;
+            font-size: large;
+        }
+
+        .about p b {
+            color: rgb(0, 157, 255);
+        }
+
+        .skills h1 {
+            margin-top: 6%;
+            margin-left: 30px;
+            color: rgb(0, 157, 255);
+
+        }
+
+        .img {
+            display: flex;
+            margin-left: 30px;
+            gap: 30px;
+        }
+
+        .imgname {
+            margin-top: 5px;
+            margin-left: 30px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .python {
+            margin-left: 7px;
+        }
+
+        .java {
+            margin-left: 68px;
+        }
+
+        .html {
+            margin-left: 62px;
+        }
+
+        .css {
+            margin-left: 60px;
+        }
+
+        .javascript {
+            margin-left: 40px;
+        }
+
+        .react {
+            margin-left: 34px;
+        }
+
+        .django {
+            margin-left: 45px;
+        }
+
+        .mysql {
+            margin-left: 50px;
+        }
+
+        .nvidiacuda {
+            margin-left: 20px;
+        }
+
+        #contactme h1 {
+            margin-top: 40px;
+            margin-left: 30px;
+            color: rgb(0, 157, 255);
+        }
+
+        #contactme .contact {
+            margin-left: 30px;
+        }
+        .contactlogo{
+            display: flex;
+            gap: 30px;
+            text-decoration: none;
+            list-style: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nikhil Golait</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hello World</div>
+                My name is <span class="color">Nikhil</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+                <div>
+                    <a href="NikhilgolaitResume.pdf" download="Nikhil_Rajesh_Golait_Resume"
+                        class="download-btn">Download Resume</a>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="img.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Web Developer', 'Python Developer', 'Systems Engineer', 'Web Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <section id="about">
+
+        <div class="about">
+            <h1>About Me </h1>
+            <p>Hello, My name is <b>Nikhil Rajesh Golait.</b> I am a Computer Science and Engineering student with a
+                solid foundation in electronics and a diverse set of technical skills.
+                My expertise spans computer networks, hardware, and various programming languages including Python,
+                Java, and JavaScript.
+            </p>
+            <br>
+            <p>
+                I have hands-on experience with frameworks such as Django and React, and am proficient in web
+                development and embedded systems.
+                With a strong grasp of Linux operating systems, I am equipped to tackle complex technical challenges and
+                contribute effectively to innovative projects. Passionate about technology and eager to apply my skills
+                in a dynamic environment.</p>
+            </p>
+        </div>
+
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="img">
+                <img src="python.png" alt="" width="100px" height="100px">
+                <img src="java.png" alt="" width="110px" height="110px">
+                <img src="html.png" alt="" width="100px" height="100px">
+                <img src="css.png" alt="" width="100px" height="100px>
+                <div class=" img">
+                <img src="javascriptpng.png" alt="" width="100px" height="100px">
+                <img src="react.png" alt="" width="100px" height="100px">
+                <img src="django.png" alt="" width="100px" height="100px">
+                <img src="mysql.png" alt="" width="100px" height="100px">
+                <img src="nvidia.png" alt="" width="100px" height="100px">
+            </div>
+        </div>
+        </div>
+        <div class="imgname">
+            <div class="python">
+                <h4>Python</h4>
+            </div>
+            <div class="java">
+                <h4>Java</h4>
+            </div>
+            <div class="html">
+                <h4>HTML</h4>
+            </div>
+            <div class="css">
+                <h4>CSS</h4>
+            </div>
+            <div class="javascript">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="react">
+                <h4>React</h4>
+            </div>
+            <div class="django">
+                <h4>Django</h4>
+            </div>
+            <div class="mysql">
+                <h4>MySQL</h4>
+            </div>
+            <div class="nvidiacuda">
+                <h4> nvidia CUDA</h4>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects">
+
+        </div>
+    </section>
+    <section id="contactme">
+        <h1>Contact Me </h1>
+        <div class="contact">
+            <!-- <span class="WhatsApp">
+                <h4>
+                    WhatsApp No: +91 7796747426
+                </h4>
+            </span> -->
+            <span class="contact">
+                <h4>
+                    WhatsApp No: +91 7796747426
+                </h4>
+                <h4>Gmail :- nikhilgoalit1@gmail.com</h4>
+            </span>
+            <div class="contactlogo">
+
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/nikhilgolait7" target="_blank">
+                        <img src="linkedin.png" alt="" width="100px" height="100px">
+                    </a>
+                </div>
+                
+                <div class="github">
+                    <a href="https://github.com/NikhilGolait7" target="_blank">
+                        <img src="github.png" alt="" width="110px" height="100px">
+                    </a>
+                </div>
+                
+                <div class="instagram">
+                    <a href="https://www.instagram.com/nikhilgolait7" target="_blank">
+                        <img src="instagram.png" alt="" width="100px" height="100px">
+                    </a>
+                </div>
+
+                
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Web Developer', 'Python Developer', 'Ethical Hacker', 'Web Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                let start = window.scrollY;
+                let end = targetElement.offsetTop - 80; // Adjust for navbar height
+                let distance = end - start;
+                let duration = 1200; // Scroll duration in milliseconds
+                let startTime = null;
+
+                function scrollAnimation(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    let timeElapsed = currentTime - startTime;
+                    let scroll = easeInOutQuad(timeElapsed, start, distance, duration);
+                    window.scrollTo(0, scroll);
+
+                    if (timeElapsed < duration) {
+                        requestAnimationFrame(scrollAnimation);
+                    }
+                }
+
+                function easeInOutQuad(t, b, c, d) {
+                    t /= d / 2;
+                    if (t < 1) return (c / 2) * t * t + b;
+                    t--;
+                    return (-c / 2) * (t * (t - 2) - 1) + b;
+                }
+
+                requestAnimationFrame(scrollAnimation);
+            });
+        });
+    </script>
+</body>
+
+</html>
